@@ -1,0 +1,191 @@
+.meal-list-container{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.background-video-mealList{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(8px);
+  opacity: 0.7;
+}
+
+.top-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  z-index: 1;
+}
+
+.top-bar .left-buttons{
+  position: absolute;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.page-title{
+  color: black;
+  margin: 0;
+}
+
+.top-bar .back-button{
+  background-color: #4b4b4b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.top-bar .back-button:hover{
+  background-color: #353535;
+}
+
+.top-bar .cart-button{
+  background-color: #4b4b4b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.top-bar .cart-button:hover{
+  background-color: #353535;
+}
+
+.top-bar .back-button, .bottom-bar .auth-button{
+  background-color: #4b4b4b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.order-btn{
+  background-color: #4b4b4b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  float: right;
+}
+
+.top-bar .back-button:hover, .bottom-bar .auth-button:hover, .order-btn:hover{
+  background-color: #353535;
+}
+
+.meal-item{
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.meal-image{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.meal-details{
+  flex-grow: 1;
+}
+
+.bottom-bar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  z-index: 1;
+}
+
+.bottom-bar .auth-button{
+  background-color: #4b4b4b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.bottom-bar .auth-button:hover{
+  background-color: #353535;
+}
+
+.logout-button{
+  background-color: #4b4b4b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.logout-button:hover{
+  background-color: #353535;
+}
+
+.container{
+  position: relative;
+  width: 90%;
+  margin: 120px auto 60px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.price{
+  color: red;
+  font-weight: bold;
+}

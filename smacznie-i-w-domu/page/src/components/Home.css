@@ -1,0 +1,99 @@
+.background-video-mainpage{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  color: black;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.content h1{
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+h3{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.btn-main{
+  background-color: #4b4b4b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70%;
+  padding: 15px 30px;
+  font-size: 18px;
+}
+
+.btn-main:hover{
+  background-color: #353535;
+  color: white;
+}
+
+@media (max-width: 768px){
+  .content{
+    width: 90%;
+    padding: 15px;
+  }
+
+  .content h1{
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  h3{
+    font-size: 1.3rem;
+    margin-top: 50px;
+  }
+
+  .btn-main{
+    width: 80%;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px){
+  .content h1{
+    font-size: 1.8rem;
+  }
+
+  h3{
+    font-size: 1.2rem;
+    margin-top: 40px;
+  }
+
+  .btn-main{
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}

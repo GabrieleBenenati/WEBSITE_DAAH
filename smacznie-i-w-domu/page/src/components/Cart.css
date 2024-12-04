@@ -1,0 +1,90 @@
+.cart-container{
+    position: relative;
+    width: 60%;
+    margin: 120px auto 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+  
+.cart-navigation{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+  
+.cart-navigation a{
+    background-color: #4b4b4b;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+.cart-navigation a:hover{
+    background-color: #353535;
+}
+  
+h2{
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+  
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+  
+ul li{
+    font-size: 18px;
+    padding: 10px 0;
+    color: black;
+}
+  
+form div{
+    margin-bottom: 15px;
+}
+  
+form input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+  
+form button{
+    background-color: #4b4b4b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0;
+}
+  
+form button:hover{
+    background-color: #353535;
+}
+  
+.background-video-cart{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0.7;
+}
